@@ -32,7 +32,7 @@ int countPairs2(int *arr, int len, int value) {
   return count;
 }
 
-int cbinsearch(int *arr, int size, int value) {
+int cbinsearch(int* arr, int left, int right, int value) {
   int middle = left + (right - left) / 2;
   if (right < left) {
     return -42;
